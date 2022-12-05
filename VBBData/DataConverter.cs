@@ -22,5 +22,18 @@ namespace VBBData
 
             return new JavaScriptSerializer().Serialize(result);
         }
+
+        public static void JsonToBytes(string path)
+        {
+            ViewControlRoot viewControlRoot = new JavaScriptSerializer().Deserialize<ViewControlRoot>(File.ReadAllText(path));
+            using (FileStream fileStream = new FileStream(Path.ChangeExtension(path, "bytes"), FileMode.Create, FileAccess.Write))
+            {
+                using (DeflateStream deflateStream = new DeflateStream(fileStream, CompressionMode.Compress))
+                {
+                    MessagePackSerializer<ViewControlRoot> messagePackSerializer = MessagePackSerializer.Get<ViewControlRoot>();
+                    messagePackSerializer.Pack(deflateStream, viewControlRoot);
+                }
+            }
+        }
     }
 }

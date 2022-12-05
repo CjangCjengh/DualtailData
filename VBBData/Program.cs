@@ -19,11 +19,18 @@ namespace VBBData
             {
                 try
                 {
-                    string jsonData = DataConverter.BytesToJson(path);
-                    string jsonPath = Path.ChangeExtension(path, "json");
-                    using (StreamWriter sw = new StreamWriter(jsonPath))
-                        sw.WriteLine(jsonData);
-                    Console.WriteLine($"{path} => {jsonPath}");
+                    if (path.EndsWith(".bytes"))
+                    {
+                        string jsonData = DataConverter.BytesToJson(path);
+                        string jsonPath = Path.ChangeExtension(path, "json");
+                        using (StreamWriter sw = new StreamWriter(jsonPath))
+                            sw.WriteLine(jsonData);
+                        Console.WriteLine($"{path} => {jsonPath}");
+                    }
+                    else
+                    {
+                        DataConverter.JsonToBytes(path);
+                    }
                 }
                 catch
                 {

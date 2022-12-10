@@ -1,3 +1,5 @@
+# How to use
+Drag ``*.bytes`` or ``*.json`` onto ``*.exe``
 # Support following games
 ## GoD2Data
 - GEARS of DRAGOON2 〜黎明のフラグメンツ〜

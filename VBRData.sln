@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VBRData", "VBRData\VBRData.csproj", "{058196C0-8D86-4D2C-A9CB-3829660B5735}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{058196C0-8D86-4D2C-A9CB-3829660B5735}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{058196C0-8D86-4D2C-A9CB-3829660B5735}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{058196C0-8D86-4D2C-A9CB-3829660B5735}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{058196C0-8D86-4D2C-A9CB-3829660B5735}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {87590B8A-0E62-4F21-A62B-4C0EAA49DB40}
+	EndGlobalSection
+EndGlobal
